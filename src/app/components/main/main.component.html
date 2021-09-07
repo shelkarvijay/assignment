@@ -1,0 +1,18 @@
+<div class="main-container" fxLayoutGap="20px" fxLayout="row" fxLayout.xs="column">
+    <div class="dashboard-container">
+        <app-dashboard></app-dashboard>
+    </div>
+    <mat-card class="statistics-container">
+        <div class="progress-label"><span>PREGRESS</span></div>
+        <hr>
+        <div class="body-container">
+            <div class="progress-div">
+                <mat-progress-bar mode="determinate" [value]="totalUsers"></mat-progress-bar>
+            </div>
+            <div class="male-female-container" fxLayout="column">
+                <div fxLayout="row" fxLayoutAlign="space-between" style="margin: 15px 0;"><span class="gender-labels">Male User :</span> <span>{{maleUsers}}</span></div>
+                <div fxLayout="row" fxLayoutAlign="space-between"><span class="gender-labels">Female User :</span> <span>{{femaleUsers}}</span></div>
+            </div>
+        </div>
+    </mat-card>
+</div>

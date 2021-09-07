@@ -1,0 +1,22 @@
+.yes-btn, .no-btn {
+    width: 70px;
+    border: 1px solid green;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.yes-btn {
+    background-color: #58AA9E;
+    color: white;
+}
+
+.no-btn {
+    background-color: white;
+    color: #58AA9E;
+    margin-right: 10px;
+}
+
+.delete-actions {
+    float: right;
+}

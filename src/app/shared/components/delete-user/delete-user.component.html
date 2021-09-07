@@ -1,0 +1,18 @@
+<div mat-dialog-title fxLayout="row" fxLayoutAlign="space-between center">
+    <div>
+        Delete User
+    </div>
+    <div>
+        <span class="material-icons" style="cursor: pointer;" (click)="onClose()">
+            close
+        </span>
+    </div>
+</div>
+<hr>
+<div style="margin-top: 20px;">
+    <p>Are you sure you want to delete {{userData.name}}?</p>
+</div>
+<div class="delete-actions">
+    <button class="no-btn" (click)="dialogRef.close()">No</button>
+    <button class="yes-btn" (click)="onYesClick()">Yes</button>
+</div>
